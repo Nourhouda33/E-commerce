@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produits Cosmétiques - La Beauté Bio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="cart.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="soins.html">Soins du corps</a>
+      <a href="maison.html">Pour la maison</a>
+      <a href="contact.html">Contact</a>
+      <a href="panier.html">Panier</a>
+    </nav>
+  </header>
+
+  <section style="padding: 40px; text-align: center;">
+    <h2>Produits Cosmétiques</h2>
+    <div class="savons-container">
+
+      <div class="savon">
+        <img src="placeholder.jpg" alt="Crème Hydratante">
+        <h3>Crème Hydratante</h3>
+        <p>9.90 €</p>
+        <button onclick="ajouterAuPanier('Crème Hydratante', 9.9)">Ajouter</button>
+      </div>
+      <div class="savon">
+        <img src="placeholder.jpg" alt="Baume à lèvres">
+        <h3>Baume à lèvres</h3>
+        <p>5.50 €</p>
+        <button onclick="ajouterAuPanier('Baume à lèvres', 5.5)">Ajouter</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

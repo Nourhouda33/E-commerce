@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La Beauté Bio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="cart.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" class="active">Accueil</a>
+      <a href="#apropos">À propos</a>
+      <a href="#produits">Nos produits</a>
+      <a href="#contact">Contact</a>
+      <a href="panier.html">🛒 Panier</a>
+    </nav>
+  </header>
+
+  <section id="apropos" class="banner-container">
+    <img src="images/savons.jpg" alt="Savons" class="banner-image" />
+    <div class="bio-circle">
+      <img src="images/brand.png" style="width: 300px;" alt="Logo La Beauté Bio"/>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section style="padding: 40px; text-align: center;">
+    <h2>À propos</h2>
+    <p style="max-width: 800px; margin: auto;"> 
+      Chez <strong>La Beauté Bio</strong>, nous croyons en une beauté authentique, respectueuse de la nature et de votre peau. 
+      Tous nos produits sont fabriqués à partir d’ingrédients d’origine naturelle, choisis avec soin pour leur efficacité et leur douceur. 
+      Notre mission est de proposer des soins qui allient bien-être, élégance et engagement éthique. 
+      Chaque savon, parfum ou cosmétique est une invitation à prendre soin de soi, dans le respect de l’environnement.
+    </p>
+  </section>
+
+  <!-- Produits -->
+  <section id="produits">
+    <h2 style="text-align: center;">Nos produits</h2>
+    <section class="savons-container">
+      <div class="savon">
+        <a href="savons.html">
+          <img src="images/savon1.jpg" alt="Savon Douceur" />
+        </a>
+        <h3>Savon Douceur</h3>
+      </div>
+      <div class="savon">
+        <img src="images/OIP (3).jpg" alt="Bougie parfumée" />
+        <h3>Bougie parfumée</h3>
+      </div>
+      <div class="savon">
+        <img src="images/OIP (5).jpg" alt="Produit cosmétique" />
+        <h3>Produit cosmétique</h3>
+      </div>
+      <div class="savon">
+        <img src="images/OIP.jpg" alt="Parfum Nature" />
+        <h3>Parfum Nature</h3>
+      </div>
+    </section>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" style="padding: 40px; text-align: center;">
+    <h2>Contactez-nous</h2>
+    <p>Une question, une suggestion, un mot doux ?</p>
+    <form style="margin-top: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">
+      <input type="text" placeholder="Nom" style="width:100%; margin-bottom:10px; padding:10px;"><br>
+      <input type="email" placeholder="Email" style="width:100%; margin-bottom:10px; padding:10px;"><br>
+      <textarea placeholder="Message" style="width:100%; height:100px; padding:10px;"></textarea><br>
+      <button type="submit"
+          style="background-color:#7c943f; color:white; padding:10px 20px; border:none;">Envoyer</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div>
+      <h3>Nous suivre</h3>
+      <p>Facebook | Twitter</p>
+    </div>
+    <div>
+      <h3>Nous parler</h3>
+      <p>01 23 45 67 89</p>
+    </div>
+    <div>
+      <h3>Nous écrire</h3>
+      <p><a href="mailto:info@monsite.fr">info@monsite.fr</a></p>
+    </div>
+  </footer>
+
+  <div class="bottom-bar">
+    <a href="#">Mentions légales</a> |
+    <a href="#">Politique de cookies</a> |
+    <a href="#">Confidentialité</a> |
+    <a href="#">Conditions</a>
+  </div>
+</body>
+</html>
