@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Parfums - La Beauté Bio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="cart.js"></script>
+</head>
+<body>
+
+  <!-- Navbar chargée dynamiquement -->
+  <header id="navbar"></header>
+
+  <main class="produits-section">
+    <h2>Nos Parfums Naturels</h2>
+    <div class="produits-container">
+      <div class="produit-card">
+        <img src="images/parfum_roses.jfif" alt="Parfum à la Rose">
+        <h3>Parfum à la Rose</h3>
+        <p>14,90 €</p>
+        <button onclick="ajouterAuPanier('Parfum à la Rose', 14.90)">Ajouter au panier</button>
+      </div>
+      <div class="produit-card">
+        <img src="images/parfum_vanille.jfif" alt="Parfum Vanille">
+        <h3>Parfum Vanille</h3>
+        <p>13,50 €</p>
+        <button onclick="ajouterAuPanier('Parfum Vanille', 13.50)">Ajouter au panier</button>
+      </div>
+      <div class="produit-card">
+        <img src="images/parfum_musc.jfif" alt="Parfum Musc Blanc">
+        <h3>Parfum Musc Blanc</h3>
+        <p>15,90 €</p>
+        <button onclick="ajouterAuPanier('Parfum Musc Blanc', 15.90)">Ajouter au panier</button>
+      </div>
+      <div class="produit-card">
+        <img src="images/parfum_agrumes.jfif" alt="Parfum Agrumes">
+        <h3>Parfum aux Agrumes</h3>
+        <p>12,90 €</p>
+        <button onclick="ajouterAuPanier('Parfum aux Agrumes', 12.90)">Ajouter au panier</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer chargé dynamiquement -->
+  <div id="footer"></div>
+
+  <script src="include.js"></script>
+  <script>
+    loadHTML("#navbar", "navbar.html");
+    loadHTML("#footer", "footer.html");
+  </script>
+</body>
+</html>

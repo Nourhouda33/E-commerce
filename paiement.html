@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement - La Beauté Bio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="navbar"></header>
+    <section class="banner-container"><img src="images/savons.jpg" class="banner-image">
+        <div class="bio-circle"><img src="images/brand.png" style="width: 300px;"></div>
+    </section>
+    <section style="padding: 40px; text-align: center;">
+        <h2>Finaliser votre commande</h2>
+        <p>Remplissez les informations de paiement ci-dessous pour compléter votre achat.</p>
+        <form style="max-width: 600px; margin: auto;">
+            <input type="text" placeholder="Nom sur la carte" style="width:100%; padding:10px; margin-bottom:10px;">
+            <input type="text" placeholder="Numéro de carte" style="width:100%; padding:10px; margin-bottom:10px;">
+            <input type="text" placeholder="Date d'expiration (MM/AA)"
+                style="width:100%; padding:10px; margin-bottom:10px;">
+            <input type="text" placeholder="CVC" style="width:100%; padding:10px; margin-bottom:20px;">
+            <button type="submit"
+                style="background-color:#7c943f; color:white; padding:10px 20px; border:none;">Payer</button>
+        </form>
+    </section>
+  <!-- Emplacement pour footer -->
+  <div id="footer"></div>
+
+  <script src="include.js"></script>
+  <script>
+    loadHTML("#navbar", "navbar.html");
+    loadHTML("#footer", "footer.html");
+  </script>
+</body>
+
+</html>

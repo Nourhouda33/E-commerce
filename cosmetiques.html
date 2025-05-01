@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cosmétiques - La Beauté Bio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="cart.js"></script>
+</head>
+<body>
+
+  <header id="navbar"></header>
+
+  <main class="produits-section">
+    <h2>Nos Cosmétiques Naturels</h2>
+    <div class="produits-container">
+      <div class="produit-card">
+        <img src="images/creme_aloevera.jpg" alt="Crème Aloe Vera">
+        <h3>Crème hydratante Aloe Vera</h3>
+        <p>9,90 €</p>
+        <button onclick="ajouterAuPanier('Crème hydratante Aloe Vera', 9.90)">Ajouter au panier</button>
+      </div>
+      <div class="produit-card">
+        <img src="images/huile_argan.jfif" alt="Huile d'Argan">
+        <h3>Huile d'Argan Pure</h3>
+        <p>12,50 €</p>
+        <button onclick="ajouterAuPanier('Huile d\'Argan Pure', 12.50)">Ajouter au panier</button>
+      </div>
+      <div class="produit-card">
+        <img src="images/masque_argile.jfif" alt="Masque à l'argile">
+        <h3>Masque Visage à l'Argile Verte</h3>
+        <p>7,90 €</p>
+        <button onclick="ajouterAuPanier('Masque Visage à l\'Argile Verte', 7.90)">Ajouter au panier</button>
+      </div>
+      <div class="produit-card">
+        <img src="images/baume_lèvres.jfif" alt="Baume lèvres">
+        <h3>Baume à Lèvres Bio</h3>
+        <p>4,50 €</p>
+        <button onclick="ajouterAuPanier('Baume à Lèvres Bio', 4.50)">Ajouter au panier</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Emplacement pour footer -->
+  <div id="footer"></div>
+
+  <script src="include.js"></script>
+  <script>
+    loadHTML("#navbar", "navbar.html");
+    loadHTML("#footer", "footer.html");
+  </script>
+</body>
+</html>

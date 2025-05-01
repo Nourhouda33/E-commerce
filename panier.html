@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panier - La Beauté Bio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="cart.js"></script>
+</head>
+<body onload="afficherPanier()">
+  <header id="navbar"></header>
+
+  <section style="padding: 40px;">
+    <h2>Votre panier</h2>
+    <table border="1" width="100%" style="text-align: center;">
+      <thead>
+        <tr><th>Produit</th><th>Quantité</th><th>Prix unitaire</th><th>Total</th><th>Action</th></tr>
+      </thead>
+      <tbody id="contenu-panier"></tbody>
+    </table>
+    <h3 style="text-align:right; padding:20px;">Total : <span id="total-panier">0 €</span></h3>
+    <div style="text-align:right;"><a href="paiement.html"><button style="
+      background-color: #7c943f;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+  ">Payer</button></a></div>
+  </section>
+    <!-- Emplacement pour footer -->
+    <div id="footer"></div>
+
+    <script src="include.js"></script>
+    <script>
+      loadHTML("#navbar", "navbar.html");
+      loadHTML("#footer", "footer.html");
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - La Beauté Bio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <!-- Emplacement pour navbar -->
+ <header id="navbar"></header>
+    <section class="banner-container"><img src="images/savons.jpg" class="banner-image">
+        <div class="bio-circle"><img src="images/brand.png" style="width: 300px;"></div>
+    </section>
+    <section style="padding: 40px; text-align: center;">
+      <h2>À propos</h2>
+      <p style="max-width: 800px; margin: auto;"> 
+        Chez <strong>La Beauté Bio</strong>, nous croyons en une beauté authentique, respectueuse de la nature et de votre peau. 
+        Tous nos produits sont fabriqués à partir d’ingrédients d’origine naturelle, choisis avec soin pour leur efficacité et leur douceur. 
+        Notre mission est de proposer des soins qui allient bien-être, élégance et engagement éthique. 
+        Chaque savon, parfum ou cosmétique est une invitation à prendre soin de soi, dans le respect de l’environnement.
+      </p>
+    </section>
+  <!-- Emplacement pour footer -->
+  <div id="footer"></div>
+
+  <script src="include.js"></script>
+  <script>
+    loadHTML("#navbar", "navbar.html");
+    loadHTML("#footer", "footer.html");
+  </script>
+</body>
+
+</html>

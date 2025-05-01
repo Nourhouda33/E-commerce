@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Produits - La Beauté Bio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="cart.js"></script>
+</head>
+<body>
+
+  <header id="navbar"></header>
+  <main class="produits-section">
+    <h2>Nos Bougie parfumée</h2>
+    <div class="produits-container">
+      <div class="produit-card">
+        <img src="images/lavande.jfif" alt="Bougie Lavande">
+        <h3>Bougie Lavande</h3>
+        <p>5,90 €</p>
+        <button onclick="ajouterAuPanier('Bougie Lavande', 5.90)">Ajouter au panier</button>
+      </div>
+      <div class="produit-card">
+        <img src="images/citron.jfif" alt="Bougie citron">
+        <h3>Bougie citron</h3>
+        <p>6,50 €</p>
+        <button onclick="ajouterAuPanier('Bougie citron', 6.50)">Ajouter au panier</button>
+      </div>
+      <div class="produit-card">
+        <img src="images/miel.jfif" alt="Bougie Miel">
+        <h3>Bougie au Miel</h3>
+        <p>6,90 €</p>
+        <button onclick="ajouterAuPanier('Bougie au Miel', 6.90)">Ajouter au panier</button>
+      </div>
+      <div class="produit-card">
+        <img src="images/foret.jfif" alt="Bougie foret">
+        <h3>Bougie foret</h3>
+        <p>5,50 €</p>
+        <button onclick="ajouterAuPanier('Bougie foret', 5.50)">Ajouter au panier</button>
+      </div>
+    </div>
+  </main>
+    <!-- Emplacement pour footer -->
+    <div id="footer"></div>
+
+    <script src="include.js"></script>
+    <script>
+      loadHTML("#navbar", "navbar.html");
+      loadHTML("#footer", "footer.html");
+    </script>
+</body>
+</html>
