@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #b59777;
+  background-image: url("images/savons.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+
+
+
+
+
+nav a:hover {
+  color: #cfe8dc;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.login-box {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.login-box h2 {
+  color: #7c943f;
+  padding: 7px;
+  margin-bottom: 20px;
+}
+
+.login-box span {
+  color: #b59777;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+  color: #444;
+}
+
+.options a {
+  color: #b59777;
+  text-decoration: none;
+}
+
+.login-box button {
+  background-color: #7c943f;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 20px;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-box button:hover {
+  background-color: #7c943f;
+}
